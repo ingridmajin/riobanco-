@@ -1,0 +1,34 @@
+<?php
+
+
+/**
+ *hook_theme() para declarar la plantilla del formulario
+ */
+
+function payment_record_theme() {
+  return [
+    'payment_record_form' => [
+      'variables' => [
+        'title' => NULL,
+        'form' => NULL,
+      ],
+      'template' => 'payment_record/payment_record_form',
+    ],
+  ];
+}
+
+/**
+ * Implementa hook menu() para crear na ruta al formulario
+
+
+function payment_record_menu() {
+  $items = [];
+  $items['payment_record'] = [
+    'title' => 'Payment record',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => ['modulo_payment_record_form'],
+    'access callback' => true,
+  ];
+  return $items;
+}
+ */

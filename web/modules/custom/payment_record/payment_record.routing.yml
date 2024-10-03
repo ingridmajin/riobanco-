@@ -1,0 +1,7 @@
+payment_record.form:
+  path: '/payment-record'
+  defaults:
+    _form: '\Drupal\payment_record\Form\PaymentRecordForm'
+    _title: 'Payment Record'
+  requirements:
+    _permission: 'access content'

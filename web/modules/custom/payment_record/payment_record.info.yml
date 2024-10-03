@@ -1,0 +1,9 @@
+name: Payment record
+description: 'Registra cuotas pagadas de creditos'
+package: Custom
+type: module
+core_version_requirement: ^9 || ^10 || ^11
+dependencies:
+  - drupal:node
+  - drupal:user
+
